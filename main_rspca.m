@@ -108,11 +108,12 @@ for i=1:nch
     EEG.data(chidx,:) = irspca.rX;
 end
 
-sfname= sprintf('rsp_result_%dsmp_%02dpct',dsmp,sigp_dB*100);
-
-sdir = outdir;
-EEG = pop_saveset( EEG, 'filename',sfname,'filepath',sdir);
-
+saveData = false;
+if saveData
+    sfname= sprintf('rsp_result_%dsmp_%02dpct',dsmp,sigp_dB*100);
+    sdir = outdir;
+    EEG = pop_saveset( EEG, 'filename',sfname,'filepath',sdir);
+end
 disp('All is done!!');
 
 end

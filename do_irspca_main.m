@@ -92,7 +92,7 @@ disp(sprintf('%d / %d ', length(iter_idx),dim));
 end
 
 %%
-h = waitbar(0, sprintf('%s (ch#%02d) is being processed ...',chnnel_info,chnnel_idx));
+% h = waitbar(0, sprintf('%s (ch#%02d) is being processed ...',chnnel_info,chnnel_idx));
 steps = length(iter_idx);
 
 if isempty(iter_idx)
@@ -120,14 +120,14 @@ else
             continue;
         end
         
-        waitbar(i/steps);
+        % waitbar(i/steps);
     end
     
     ROIidx = setdiff(idx_num,idx);
     rXbar = sum(reconXbar(ROIidx,:));
 end
 
-close(h);
+% close(h);
 
 end
 
