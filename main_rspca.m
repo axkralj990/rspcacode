@@ -21,7 +21,7 @@
 %               (for single-peak detection)
 %     flg_verboase :  1 = on, otherwise = off  
 
-function main_rspca(EEG,outdir,tgch,seg_val,sigp_val,flg_verbose)
+EEG = function main_rspca(EEG,outdir,tgch,seg_val,sigp_val,flg_verbose)
 
 if ismac~=1
     
