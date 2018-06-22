@@ -223,8 +223,8 @@ set(f,'Visible','on');
             disp('run rsPCA!!');
             %             h = waitbar(0,'Please wait...');
 
-            main_rspca(EEG,output_path,tgch,seg_val,sigp_val,flg_verbose);
-            
+            main_rspca(EEG,outdir,tgch,1,seg_val,sigp_val,true,flg_verbose)
+
             set(group_box,'enable','on');
             
         end
