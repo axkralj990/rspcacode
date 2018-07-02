@@ -65,5 +65,3 @@ Please feel free to contact us (hyunchul_kim@korea.ac.kr), if you have any probl
 Reference
 
 Kim et al., Recursive approach of EEG segment based principal component analysis substantially reduces helium-pump artifacts of EEG data simultaneously acquired with fMRI, NeuroImage 2015, 104: 437-51
-
-![Image of rspca flow](rspca_flow.png)
